@@ -1,0 +1,73 @@
+<ng-container *ngIf="person$ | async as person; else loadingTemplate">
+  First Name: {{person.FirstName}} <br/>
+  Last Name: {{person.LastName}} <br/>
+  Color: {{person.Color}}
+</ng-container>
+<ng-template #loadingTemplate>
+  Loading...
+</ng-template>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1 -->
+<!--<ng-container *ngIf="person$ | async">
+  First Name: {{(person$ | async)?.FirstName}} <br/>
+  Last Name: {{(person$ | async)?.LastName}} <br />
+  Favorite Color: {{(person$ | async)?.Color}}
+</ng-container>-->
+
+<!-- 1 -->
+
+<!-- 2 -->
+
+<!--<ng-container *ngIf="person$ | async as prsn">
+  First Name: {{prsn.FirstName}} <br/>
+  Last Name: {{prsn.LastName}} <br/>
+  Favorite Color: {{prsn.Color}}
+</ng-container>-->
+
+<!-- 2 -->
+
+<!-- 3 -->
+<!--<ng-container *ngIf="person$ | async as prsn">
+  First Name: {{prsn.FirstName}} <br/>
+  Last Name: {{prsn.LastName}} <br/>
+  Favorite Color: {{prsn.Color}}
+</ng-container>
+<ng-container *ngIf="!(person$ | async)">
+  Loading person...
+</ng-container>-->
+<!-- 3 -->
+
+
+<!-- 4 -->
+<!--<ng-container *ngIf="person$ | async as prsn; else loadingTemplate" >
+  First Name: {{prsn.FirstName}} <br/>
+  Last name: {{prsn.LastName}} <br/>
+  Favorite Color: {{prsn.Color}}
+</ng-container>
+<ng-template #loadingTemplate>
+  Loading person...
+</ng-template>-->
+<!-- 4 -->
